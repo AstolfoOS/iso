@@ -21,3 +21,7 @@ run_archiso -i out/astolfos-yyyy-mm-dd-x86_64.iso
 # UEFI
 run_archiso -u -i out/astolfos-yyyy-mm-dd-x86_64.iso
 ```
+
+## License
+
+Everything in this repo is licensed under the GPL3 (or any later version)
