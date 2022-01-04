@@ -118,3 +118,7 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
+gnome
+base-devel
+gdm
+xorg
