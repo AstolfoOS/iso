@@ -11,10 +11,13 @@ echo "Please wait..."
 useradd -m astolfos
 yes astolfos | passwd astolfos > /dev/null 2> /dev/null
 yes astolfos | sudo -u astolfos chsh -s /usr/bin/zsh > /dev/null 2> /dev/null
-cp astolfo-1.jpg /home/astolfos/
-chmod ugo+rw /home/astolfos/astolfo-1.jpg
-sudo -u astolfos gsettings set org.gnome.desktop.background picture-uri file:///home/astolfos/astolfo-1.jpg
+cp astolfo-1.png /usr/share/backgrounds/gnome/adwaita-day.png
+cp astolfo-1.png /usr/share/backgrounds/gnome/adwaita-morning.png
+cp astolfo-1.png /usr/share/backgrounds/gnome/adwaita-night.png
 echo 'cat /etc/motd' > /home/astolfos/.zshrc
-echo 'cat /etc/motd' > /home/astolfos/.bashrc
+echo 'echo " "' >> /home/astolfos/.zshrc
+cp /home/astolfos/.zshrc /home/astolfos/.bashrc
+# starts internet service
+systemctl enable --now NetworkManager
 # starts display manager
 systemctl start gdm
