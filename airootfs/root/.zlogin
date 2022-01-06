@@ -1,6 +1,6 @@
 # fix for screen readers
 if grep -Fq 'accessibility=' /proc/cmdline &> /dev/null; then
-    setopt SINGLE_LINE_ZLE
+    setopt SINGLE_L
 fi
 
 # since we are going to be starting X anyways, we just don't run the automated script
